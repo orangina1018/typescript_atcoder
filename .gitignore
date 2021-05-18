@@ -1,0 +1,30 @@
+.DS_Store
+*.js
+jest.config.js
+.prettierrc.js
+.npmignore
+node_modules
+*.d.ts
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Parcel default cache directory
+.parcel-cache
+
+# Test by goi
+/__tests__
+/node_modules
+/utils
+
+.eslintrc
+index.Test
+
+package.json
+package-lock.json
+tsconfig.json
+yarn.lock
+yarn-error.log
+
+atcoder/tsconfig.json
