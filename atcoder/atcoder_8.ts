@@ -18,50 +18,35 @@
 
 */
 
-import * as fs from 'fs';
+import * as fs from "fs";
 
 //入力を考える関数
 function main(input: string) {
-  // ここに処理を書く
-  let N: string = input.split('\n')[0];
-  let N_number: number = +N;
-  console.log(N);
+  const N: string = input.split("\n")[0];
+  const N_number: number = Number(N);
+  //console.log(N_number);
 
-  let A: string = input.split('\n')[1];
-  let A_number: number = +A;
-  console.log(A);
+  const Y: string = input.split("\n")[1];
+  const Y_number: number = Number(Y);
+  //console.log(Y_number);
 
-  let B: string = input.split('\n')[2];
-  let B_number: number = +B;
-  console.log(B);
+  let res10000: number = -1;
+  let res5000: number = -1;
+  let res1000: number = -1;
 
-  sumMain(N_number, A_number, B_number);
-}
+  for (let a: number = 0; a <= N_number; ++a) {
+    for (let b: number = 0; b <= N_number - a; ++b) {
+      let c: number = N_number - a - b;
+      let amountOfmoney: number = 10000 * a + 5000 * b + 1000 * c;
+      if (amountOfmoney === Y_number) {
+        res10000 = a;
+        res5000 = b;
+        res1000 = c;
 
-//格桁の総和を求める
-function sumDigitnumber(X: number): number {
-  let remainder: number = 0;
-  X = 0;
-
-  while (X > 0) {
-    remainder += X % 10;
-    X /= 10;
-  }
-  let sum = remainder;
-  return sum;
-}
-
-console.log();
-
-function sumMain(N_number: number, A_number: number, B_number: number): void {
-  let ans_total_number: number = 0;
-  for (let i = 1; i <= N_number; ++i) {
-    let sum = sumDigitnumber(i);
-    if (sum >= A_number && sum <= B_number) {
-      ans_total_number += i;
+        console.log(String(Array(a, b, c)));
+      }
     }
   }
-  return console.log(ans_total_number);
 }
 
-main(fs.readFileSync('input_file/file5.txt', 'utf8'));
+main(fs.readFileSync("input_file/file8.txt", "utf8"));
