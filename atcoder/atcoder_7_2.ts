@@ -23,21 +23,20 @@ import * as fs from "fs";
 function main(input: string) {
   let N: string = input.split("\n")[0];
   let N_number: number = Number(N);
-  //console.log(N);
+  console.log(N);
 
   let Q: string = input.split("\n")[1];
   let Q_number: number = Number(Q);
-  //console.log(Q);
+  console.log(Q);
 
   let d: string[] = input.split("\n")[2].split(",");
   let d_number_array: number[] = d.map(Number);
-  //console.log(d_number_array);
+  console.log(d_number_array);
 
-  let num: number[] = Array(100).fill(0);
-  //console.log(num)
+  let num: number[] = [0];
   for (let i: number = 0; i < N_number; ++i) {
     num[d_number_array[i]]++;
-    //console.log(num)
+    console.log(num)
   }
   let res = 0;
   for (let i: number = 1; i <= 100; ++i) {
