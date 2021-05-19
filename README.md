@@ -19,4 +19,4 @@ atcoder/
 - [atcoder_10 will](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_10.ts)
 
 ## otherSolve
-- [atocoder_7_other](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7_2.ts)
+- [atocoder_7_other progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7_2.ts)
