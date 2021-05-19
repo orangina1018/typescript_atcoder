@@ -3,6 +3,8 @@
 # todo
 [atcoder10選](https://qiita.com/drken/items/fd4e5e3630d0f5859067)
 
+- 競技プログラミングの出力の渡し方を調べる
+
 # place
 atcoder/
 
@@ -14,8 +16,8 @@ atcoder/
 - [atcoder_5 progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_5.ts)
 - [atcoder_6 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_6.ts)
 - [atcoder_7 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7.ts)
-- [atcoder_8 progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_8.ts)
-- [atcoder_9 will](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_9.ts)
+- [atcoder_8 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_8.ts)
+- [atcoder_9 progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_9.ts)
 - [atcoder_10 will](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_10.ts)
 
 ## otherSolve
