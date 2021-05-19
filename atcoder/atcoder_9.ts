@@ -29,12 +29,12 @@ function main(input: string) {
   const string_divide_array: string[] = ["dream", "dreamer", "erase", "eraser"];
 
   let re_reverse_string_divide_array: string[] = [];
-  for (let i = 0; i <= string_divide_array.length; ++i) {
+  for (let i = 0; i < string_divide_array.length; ++i) {
     let str: string = string_divide_array[i];
     let re_str: string = reverseString(str);
     re_reverse_string_divide_array.push(re_str);
   }
-  console.log(re_reverse_string_divide_array)
+  console.log(re_reverse_string_divide_array);
 
   function reverseString(str: string): string {
     return str.split("").reverse().join("");
