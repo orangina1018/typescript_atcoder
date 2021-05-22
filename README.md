@@ -18,7 +18,7 @@ atcoder/
 - [atcoder_7 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7.ts)
 - [atcoder_8 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_8.ts)
 - [atcoder_9 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_9.ts)
-- [atcoder_10 progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_10.ts)
+- [atcoder_10 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_10.ts)
 
 ## otherSolve
 - [atocoder_7_other progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7_2.ts)
