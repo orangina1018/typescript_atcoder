@@ -13,7 +13,7 @@ atcoder/
 - [atcoder_2 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_2.ts)
 - [atcoder_3 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_3.ts)
 - [atcoder_4 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_4.ts)
-- [atcoder_5 progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_5.ts)
+- [atcoder_5 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_5.ts)
 - [atcoder_6 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_6.ts)
 - [atcoder_7 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7.ts)
 - [atcoder_8 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_8.ts)
