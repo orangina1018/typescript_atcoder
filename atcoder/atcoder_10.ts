@@ -33,6 +33,23 @@ function main(input: string) {
   let A_array: string[] = input.split("\n")[1].split(",");
   let A_number_array: number = Number(A_array);
   console.log(A_number_array);
+
+  let t[0] : number[] = 0;
+  let x[0] : number[] = 0;
+  let y[0] : number[] = 0;
+
+  let canReach :boolean = false; 
+  for (let i : number = 0; i < N_number; ++i){
+    let dt = t[i+1] - t[i];
+    let dist = abs(x[i +1] -x[i]) + abs(x[i +1] -x[i]);
+    if (dist <= dt && dt % 2 != dist % 2 ){canReach = True;}
+
+  }
+  if (canReach){
+    console.log('Yes')
+  }else{
+    console.log('No')
+  }
 }
 
 main(fs.readFileSync("input_file/file10.txt", "utf8"));

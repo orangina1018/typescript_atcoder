@@ -28,3 +28,5 @@ yarn.lock
 yarn-error.log
 
 atcoder/tsconfig.json
+
+/src
