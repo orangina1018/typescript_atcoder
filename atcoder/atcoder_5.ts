@@ -23,7 +23,6 @@ import * as fs from 'fs';
 
 //入力を考える関数
 function main(input: string) {
-  // ここに処理を書く
   let N: string = input.split('\n')[0];
   let N_number: number = +N;
   console.log(N);
@@ -35,24 +34,22 @@ function main(input: string) {
   let B: string = input.split('\n')[2];
   let B_number: number = +B;
   console.log(B);
-  
-  sumMain(N_number, A_number, B_number)
+
+  sumMain(N_number, A_number, B_number);
 }
+main(fs.readFileSync('input_file/file5.txt', 'utf8'));
 
 //格桁の総和を求める
 function sumDigitnumber(X: number): number {
   let remainder: number = 0;
-  X = 0;
 
   while (X > 0) {
     remainder += X % 10;
-    X /= 10;
+    X = Math.floor((X /= 10));
   }
-  let sum = remainder;
+  let sum: number = remainder;
   return sum;
 }
-
-console.log()
 
 function sumMain(N_number: number, A_number: number, B_number: number): void {
   let ans_total_number: number = 0;
@@ -62,7 +59,5 @@ function sumMain(N_number: number, A_number: number, B_number: number): void {
       ans_total_number += i;
     }
   }
-  return console.log(ans_total_number);
+  console.log(ans_total_number);
 }
-
-main(fs.readFileSync('input_file/file5.txt', 'utf8'));
