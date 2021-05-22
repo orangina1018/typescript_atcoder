@@ -21,36 +21,56 @@ AtCoDeer くんが時刻 t に 点 (x,y) にいる時、 時刻 t+1 には 点 (
 例えば (0,0),(0,1),(1,1),(1,2),(1,1),(1,0),(1,1) と移動すれば目的を果たせます。
 */
 
-import * as fs from "fs";
+/*【質問】
+//43行目のコードが何故[0][0]からじゃなくて、[0][1]から入るのかが謎
+*/
+
+import * as fs from 'fs';
 
 //入力を考える関数
 function main(input: string) {
-  let N: string = input.split("\n")[0];
+  let N: string = input.split('\n')[0];
   let N_number: number = Number(N);
   console.log(N_number);
 
-  // 後で訂正
-  let A_array: string[] = input.split("\n")[1].split(",");
-  let A_number_array: number = Number(A_array);
-  console.log(A_number_array);
-
-
-  let t[0] : number[] = 0;
-  let x[0] : number[] = 0;
-  let y[0] : number[] = 0;
-
-  let canReach :boolean = false; 
-  for (let i : number = 0; i < N_number; ++i){
-    let dt = t[i+1] - t[i];
-    let dist = abs(x[i +1] -x[i]) + abs(x[i +1] -x[i]);
-    if (dist <= dt && dt % 2 != dist % 2 ){canReach = true}
-
+  let A_array_number: number[][] = [[0, 0, 0]];
+  for (let i: number = 0; ++i; ) {
+    if (input.split('\n')[i] == undefined) {
+      break;
+    } else {
+      let A: string = input.split('\n')[i];
+      //以下コードが何故[0][0]からじゃなくて、[0][1]から入るのかが謎
+      A_array_number[i] = A.split(' ').map(Number);
+    }
+    console.log(A_array_number);
   }
-  if (canReach){
-    console.log('Yes')
-  }else{
-    console.log('No')
+
+  let t: number[] = [];
+  let x: number[] = [];
+  let y: number[] = [];
+
+  for (let i: number = 0; i < A_array_number.length; ++i) {
+    t[i] = A_array_number[i][0];
+    x[i] = A_array_number[i][1];
+    y[i] = A_array_number[i][2];
+  }
+  console.log(t);
+  console.log(x);
+  console.log(y);
+
+  let canReach: boolean = false;
+  for (let i: number = 0; i < N_number; ++i) {
+    let dt = t[i + 1] - t[i];
+    let dist = Math.abs(x[i + 1] - x[i]) + Math.abs(y[i + 1] - y[i]);
+    if (dist <= dt && dt % 2 == dist % 2) {
+      canReach = true;
+    }
+  }
+  if (canReach) {
+    console.log('Yes');
+  } else {
+    console.log('No');
   }
 }
 
-main(fs.readFileSync("input_file/file10.txt", "utf8"));
+main(fs.readFileSync('input_file/file10.txt', 'utf8'));
