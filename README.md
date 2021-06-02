@@ -21,5 +21,5 @@ atcoder/
 - [atcoder_10 done](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_10.ts)
 
 ## otherSolve
-- [atocoder_7_other progress](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7_2.ts)
-- [atocoder_7_other will? (正規表現)]()
+- [atocoder_7_other progress（set文)](https://github.com/orangina1018/typescript_atcoder/blob/main/atcoder/atcoder_7_2.ts)
+- [atocoder_9_other will? (正規表現)]()
